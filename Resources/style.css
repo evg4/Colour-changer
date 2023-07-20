@@ -7,11 +7,11 @@ body {
 }
 
 h1,
-h3 {
+h2 {
   text-align: center;
 }
 
-h3 {
+h2 {
   background-color: white;
   opacity: 0.5;
   margin: 0 auto;
@@ -20,7 +20,7 @@ h3 {
 
 #square {
   height: 300px;
-  width: 300px;
+  max-width: 300px;
   background-color: white;
   border: 2px solid black;
   border-radius: 4px;
@@ -40,10 +40,11 @@ h3 {
 #buttons,
 #shape-buttons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
 }
 
 #toSquare {
@@ -68,7 +69,7 @@ h3 {
 button {
   height: 40px;
   width: 90px;
-  margin: 0 10px;
+  margin: 10px;
   font-weight: bold;
   font-size: 20px;
   border-radius: 2px;
@@ -111,4 +112,30 @@ button:active {
 #reset {
   background-color: white;
   margin: 10px;
+}
+
+@media only screen and (max-width: 495px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+
+  button {
+    font-size: 15px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  #buttons,
+  #shape-buttons {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 245px) {
+  #square {
+    height: 150px;
+  }
 }
