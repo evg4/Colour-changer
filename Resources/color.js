@@ -6,7 +6,7 @@ let mysteryButton = document.getElementById("mystery");
 let resetButton = document.getElementById("reset");
 let toCircleButton = document.getElementById("toCircle");
 let toSquareButton = document.getElementById("toSquare");
-let text = document.getElementsByTagName("h3")[0];
+let text = document.getElementsByTagName("h2")[0];
 
 function turnRed() {
   square.style.backgroundColor = "red";
